@@ -1,0 +1,48 @@
+<!-- <form>
+    Product Id:<input type="number" name="productId" [(ngModel)]="product.productId"><br>
+    Product Name:<input type="text" name="productName" [(ngModel)]="product.productName"><br>
+    Product Brand:<input type="text" name="productBrand" [(ngModel)]="product.productBrand"><br>
+    Product Price:<input type="number" name="productPrice" [(ngModel)]="product.productPrice"><br>
+
+</form>
+<p><button (click)="add()"> Submit</button></p> -->
+
+<!-- -------------------------------------------- -->
+<!-- Bootstrap code is written below in this file -->
+
+<div class="container">
+    <form>
+        <div class="form-group">
+        <label for="pid">Product Id</label>
+        <input type="number" id="pid" class="form-control" name="productId" [(ngModel)]="product.productId" required>
+        </div>
+        
+        <div class="form-group">
+                <label for="pname">Name</label>
+                <input type="text" id="pname" class="form-control" name="productName" [(ngModel)]="product.name" required>
+        </div>
+        
+
+        <div class="form-group">
+                <label for="pbrand">Brand</label>
+                <input type="text" id="pbrand" class="form-control" name="productBrand" [(ngModel)]="product.brand" required>
+        </div>
+        
+        <div class="form-group">
+                <label for="pprice">Price</label>
+                <input type="text" id="pprice" class="form-control" name="productPrice" [(ngModel)]="product.price" required>
+        </div>
+
+        <button type="submit" (click)="add()" class="btn btn-success">Submit</button>
+    </form>
+    </div>
+<p *ngIf="doToggle">
+    Show this paragraph
+</p>
+
+<p><button (click)="toggle()"> Toggle</button></p>
+
+<!-- {{product.productId}}<br>
+{{product.name| uppercase}}<br>
+{{product.brand| uppercase}}<br>
+{{product.price| uppercase}}<br> -->

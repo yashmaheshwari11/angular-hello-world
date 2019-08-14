@@ -1,0 +1,3 @@
+<!-- Child-->
+<app-customer (customerEmitter)="addCustomer($event)"></app-customer>
+<app-customer-detail *ngFor="let c of customers" [customer]="c"></app-customer-detail>
